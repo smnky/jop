@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ "$#" -eq 0 ]; then
+	echo "unjop  0.0.1"
+	exit 0
+fi
+
+# Unjop the dir
+chmod u+rwx,go+rx $1

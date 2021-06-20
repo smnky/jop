@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ "$#" -eq 0 ]; then
+	echo "jop  0.0.1"
+	exit 0
+fi
+
+# Jop the dir
+chmod u-rwx,go-rwx $1
